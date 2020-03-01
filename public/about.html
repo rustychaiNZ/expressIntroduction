@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Node Introduction</title>
+		<!-- Bootstrap link -->
+		<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/stylesheet.css">
+	</head>
+	<body class="bg-secondary">
+
+		<!-- Website header -->
+		<div class="bg-danger pt-3">
+			<h1 class="text-dark display-2 text-center">About Page</h1>
+			<h2 class="text-light text-center">Work completed in class on the 27/2/20</h2>
+			<!-- Navigation Bar -->
+			<ul class="nav justify-content-center bg-white mb-0">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link disabled">About Page</a>
+				</li>
+				<li class="nav-item">
+					<a href="contactPage.html" class="nav-link">Contact Us</a>
+				</li>
+			</ul>
+			<!-- Navigation Bar ends -->
+		</div> 
+		<!-- Header ends -->
+	
+		<!-- Website contents -->
+		<div class="container shadow mb-5 bg-light">
+			<div class="row">
+			<div class="col-9 mx-auto p-2">
+				<img src="assets/filler.jpg" style="width: 15vw;" class="d-block px-2 float-left">
+				<h3>Russell Johnson</h3>
+
+				<h4>About Assesment</h4>
+				<p>This website has been developed as part of Yoobee Colleges Level 6 Web and UX design course for my formative 3-1 assignment. I have been tasked with creating a single page application that allows the user to browse items retrieved from an external API, specifically <a href="https://newsapi.org" class="text-danger" target="_blank">NewsAPI.org</a>.</p>
+				<p>The application needs to show news stories from around the world while also allowing the user to be able to 	make a selection for filtering categories and a search function.</p>
+				
+				<h4>Website Process</h4>
+				<ol class="float-left">
+					<li>Began by loading all Grunt.js packages</li>
+					<li>Created html template with for results</li>
+					<li>Created ajax function to output news information</li>
+					<li>Tested api key by logging <b>news.articles</b></li>
+					<li>Created basic card output</li>
+
+					<li><b>Began working on filtering via country</b></li>
+					<!-- Filtering via country -->
+					<ul>
+						<li>Created 2 variables</li>
+						<ul>
+							<li>var country;</li>
+							<li>var countryCode;</li>
+						</ul>
+						<li>Gather value from selected country and store in <b>country</b> variable</li>
+						<li>Created if condition that changes the user's inputs into <b>countryCode</b> from an array</li>
+						<li>Created condition to make sure the user has selected a country from drop down select</li>
+					</ul>
+
+					<li><b>Began working on filtering via category</b></li>
+					<!-- Filtering via category -->
+					<ul>
+						<li>Created another 2 variables</li>
+						<ul>
+							<li>var category;</li>
+							<li>var categoryCode;</li>
+						</ul>
+						<li>Gather value from selected category and store in <b>category</b> variable</li>
+						<li>Created if condition that changes the user's inputs into <b>categoryCode</b> from an array</li>
+						<li>Created condition to make sure the user has selected a category from drop down select</li>
+					</ul>
+
+					<li>Add country and category code variables to url to change dynamically from user input</li>
+					<li>Add in search function that query searches the NewsAPI</li>
+					<li>Clears article page and displays all articles with the keywords</li>
+					<li>Added loading animation using bootstrap</li>
+				</ol>
+			</div>
+		</div>
+		</div>
+		<!-- Website contents end -->
+
+		<!-- Footer -->
+		<div class="bg-dark py-3 mb-0">
+			<div class="row mx-0">
+				<!-- Link to author page -->
+				<div class="col">
+					<h2 class="small text-center text-white">Website created by <a href="about.html" class="text-danger">Russell Johnson</a> as a part of Level 6 Web and Ux Design Course at Yoobee Colleges</h2>
+				</div>
+			</div>
+		</div>
+	<!-- Footer ends -->
+
+		<!-- JS from node_modules -->
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- Custom scripts -->
+		<script src="js/script.js"></script>
+	</body>
+</html>

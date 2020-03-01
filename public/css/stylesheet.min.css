@@ -1,0 +1,1 @@
+.container{min-height:75vh}h1{color:pink}@media (min-width:1496px){.container{max-width:1496px}}@media (max-width:460px){.container{max-width:100%}}
