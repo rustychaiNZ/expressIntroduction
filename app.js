@@ -3,7 +3,9 @@ const express = require('express');
 const app = express(); 
 
 const path = require('path');
+// Plant api data set
 const apiData = require('./plants.json');
+// Car details api data set
 const apiData2 = require('./carDetails.json');
 
 const port = 3000;
@@ -73,7 +75,6 @@ app.get('/plantFamily/pf=:plantFamily' , (req , res) =>{
 app.get('/carDetails' , (req,res) =>{
 	res.json(apiData2)
 });
-
 app.get('/carDetails/o=:owner&m=:carMaker' , (req , res) =>{
 	const carMakerParam = req.params.carMaker;
 	const ownerParam = req.params.owner;
@@ -86,7 +87,6 @@ app.get('/carDetails/o=:owner&m=:carMaker' , (req , res) =>{
 	}
 	res.send(ownersFilterdArray);
 });
-
 
 // Displays in console when the server is turned on
 app.listen(port, () => console.log(`Example app listening on port YeEeEeeeEeEEEst ${port}!`));
