@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	alert('hello world');
-});
+	console.log('hello world');
 
-$('#title').click(function(){
-	alert('yep, defitately working');
+	$('h1').click(function(){
+		$('body').addClass('bg-dark');
+	});
 });

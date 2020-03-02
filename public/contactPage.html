@@ -13,18 +13,18 @@
 
 		<!-- Website header -->
 		<div class="bg-danger pt-3">
-			<h1 id="title" class="text-dark display-2 text-center">Node Express Introduction</h1>
+			<h1 class="text-dark display-2 text-center">Contact Developer</h1>
 			<h2 class="text-light text-center">Work completed in class on the 2/3/20</h2>
 			<!-- Navigation Bar -->
 			<ul class="nav justify-content-center bg-white mb-0">
 				<li class="nav-item">
-					<a href="#" class="nav-link disabled">Home</a>
+					<a href="index.html" class="nav-link">Home</a>
 				</li>
 				<li class="nav-item">
 					<a href="about.html" class="nav-link">About Page</a>
 				</li>
 				<li class="nav-item">
-					<a href="contactPage.html" class="nav-link">Contact Us</a>
+					<a href="#" class="nav-link disabled">Contact Us</a>
 				</li>
 			</ul>
 			<!-- Navigation Bar ends -->
@@ -32,8 +32,32 @@
 		<!-- Header ends -->
 	
 		<!-- Website contents -->
-		<div class="container shadow mb-5 bg-light">
-			<img src="images/filler.jpg" class="img-fluid" alt="A filler image for the website">
+		<div class="container shadow mb-5 bg-light pt-3">
+			<!-- Form -->
+			<form action="sendForm" method="post" class="border border-danger p-3">
+				<div class="row">
+					<div class="col-6">
+						<label for="fName">First Name:</label>
+						<input type="text" name="fName" id="fName" placeholder="Enter your first name" class="form-control">
+						<label for="lName" id="lName">Last Name:</label>
+						<input type="text" name="lName" placeholder="Enter your last name" class="form-control">
+						<label for="personToContact">Enter name of person that you want to contact:</label>
+						<input type="text" name="personToContact" id="personToContact" placeholder="Contactee first and last name" class="form-control">
+					</div>
+					<div class="col-6">
+						<label for="email">Email:</label>
+						<input type="text" name="email" id="email" class="form-control" placeholder="Enter email">
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" class="form-control" rows="4" placeholder="Enter message for website admin to pass on"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<button class="btn btn-lg btn-block btn-outline-danger mt-3" type="submit" id="submitForm">Subimt</button>
+					</div>
+				</div>
+			</form>
+			<!-- Form ends -->
 		</div>
 		<!-- Website contents end -->
 
